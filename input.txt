@@ -1,0 +1,2 @@
+Hello
+Writing from Java is easy!

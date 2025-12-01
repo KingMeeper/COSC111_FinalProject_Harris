@@ -1,0 +1,119 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Harris_FinalProject",
+            "request": "launch",
+            "mainClass": "Harris_FinalProject",
+            "projectName": "COSC_111_3f69cfab"
+        },
+        {
+            "type": "java",
+            "name": "Harris_Lab9",
+            "request": "launch",
+            "mainClass": "Harris_Lab9",
+            "projectName": "COSC_111_3f69cfab"
+        },
+        {
+            "type": "java",
+            "name": "WriteFileDemo",
+            "request": "launch",
+            "mainClass": "WriteFileDemo",
+            "projectName": "COSC_111_3f69cfab"
+        },
+        {
+            "type": "java",
+            "name": "CountDemo",
+            "request": "launch",
+            "mainClass": "CountDemo",
+            "projectName": "COSC_111_3f69cfab"
+        },
+        {
+            "type": "java",
+            "name": "Harris_Lab8",
+            "request": "launch",
+            "mainClass": "Harris_Lab8",
+            "projectName": "COSC_111_3f69cfab"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Circle_Area",
+            "request": "launch",
+            "mainClass": "Circle_Area",
+            "projectName": "COSC_111_3f69cfab"
+        },
+        {
+            "type": "java",
+            "name": "ColinHarris_Lab1",
+            "request": "launch",
+            "mainClass": "ColinHarris_Lab1",
+            "projectName": "COSC_111_3f69cfab"
+        },
+        {
+            "type": "java",
+            "name": "Colin_Lab0",
+            "request": "launch",
+            "mainClass": "Colin_Lab0",
+            "projectName": "COSC_111_3f69cfab"
+        },
+        {
+            "type": "java",
+            "name": "Harris_Lab4",
+            "request": "launch",
+            "mainClass": "Harris_Lab4",
+            "projectName": "COSC_111_3f69cfab"
+        },
+        {
+            "type": "java",
+            "name": "Harris_Lab5",
+            "request": "launch",
+            "mainClass": "Harris_Lab5",
+            "projectName": "COSC_111_3f69cfab"
+        },
+        {
+            "type": "java",
+            "name": "Harris_Lab6",
+            "request": "launch",
+            "mainClass": "Harris_Lab6",
+            "projectName": "COSC_111_3f69cfab"
+        },
+        {
+            "type": "java",
+            "name": "Harris_lab2",
+            "request": "launch",
+            "mainClass": "Harris_lab2",
+            "projectName": "COSC_111_3f69cfab"
+        },
+        {
+            "type": "java",
+            "name": "Harris_lab3",
+            "request": "launch",
+            "mainClass": "Harris_lab3",
+            "projectName": "COSC_111_3f69cfab"
+        },
+        {
+            "type": "java",
+            "name": "Harris_Potion",
+            "request": "launch",
+            "mainClass": "Harris_Potion",
+            "projectName": "COSC_111_3f69cfab"
+        },
+        {
+            "type": "java",
+            "name": "Harris_PotionLab",
+            "request": "launch",
+            "mainClass": "Harris_PotionLab",
+            "projectName": "COCS_111_3f69cfab"
+        }
+    ]
+}
