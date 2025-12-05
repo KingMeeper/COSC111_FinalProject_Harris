@@ -9,6 +9,13 @@
             "name": "Harris_FinalProject",
             "request": "launch",
             "mainClass": "Harris_FinalProject",
+            "projectName": "COSC111_FinalProject_Harris_c785a0b8"
+        },
+        {
+            "type": "java",
+            "name": "Harris_FinalProject",
+            "request": "launch",
+            "mainClass": "Harris_FinalProject",
             "projectName": "COSC_111_3f69cfab"
         },
         {
