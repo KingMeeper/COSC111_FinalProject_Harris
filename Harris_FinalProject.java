@@ -24,6 +24,7 @@ public class Harris_FinalProject {
         System.out.println("1. Attack");
         System.out.println("2. Heal");
 
+    //If a character is entered, the program will treat it like entering in a 3.
         if (kb.hasNextInt()) {
             return kb.nextInt();
         } else {
