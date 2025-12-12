@@ -16,12 +16,13 @@ public class Harris_FinalProject {
         Scanner kb = new Scanner(System.in);
         System.out.print("Enter 'Pokémon' Name: ");
         String PokémonName = kb.next();
-        System.out.print("Enter Boss Name: ");
+        System.out.print("Enter 'Boss' Name: ");
         String BossName = kb.next();
+        System.out.println("");
 
         //Name, Health, Minimum Attack Power, Maximum Attack Power, Minimum Recovery, and Maximum Recovery for the player and the boss.
-        Pokémon boss = new Pokémon(PokémonName, 2500, 50, 250, 10, 100);
-        Pokémon player = new Pokémon(BossName, 1500, 25, 500, 25, 500);
+        Pokémon player = new Pokémon(PokémonName, 2000, 100, 400, 100, 1000);
+        Pokémon boss = new Pokémon(BossName, 1500, 150, 750, 25, 500);
 
         //Menu Choice
         int choice = 0;
@@ -36,19 +37,22 @@ public class Harris_FinalProject {
         //Keeps the game running as long as either the Pokémon or the Boss is still alive
         while (pokémonAlive && bossAlive){
             // player turn portion
-            boss.printInfo();
             player.printInfo();
+            boss.printInfo();
             choice = readMenuChoice(kb);
             if (choice == 1){
                 int attack = player.nextAttack();
-                System.out.println(PokémonName + " attacked " + BossName + "." + "It did " + attack + " damage");
+                System.out.println("");
+                System.out.println(PokémonName + " attacked " + BossName + "." + " It did " + attack + " damage.");
                 boolean died = boss.attacked(attack);
                 if (died) {
                     bossAlive = false;
+                    break;
                 }    
             } else if (choice == 2){
                 int heal = player.heal();
-                System.out.println(PokémonName + " recovered " + heal + " health");
+                System.out.println("");
+                System.out.println(PokémonName + " recovered " + heal + " health.");
             } else {
                 System.out.println(PokémonName + " chose to forfeit their turn!");
             }
@@ -57,24 +61,30 @@ public class Harris_FinalProject {
             choice = bossTurn.nextInt(10);
             if (choice <= 7){
                 int attack = boss.nextAttack();
-                System.out.println(BossName + " attacked " + PokémonName + "." + "It did " + attack + " damage");
+                System.out.println(BossName + " attacked " + PokémonName + "." + " It did " + attack + " damage.");
+                System.out.println("");
                 boolean died = player.attacked(attack);
                 if (died) {
                     pokémonAlive = false;
                 }    
             } else {
                 int heal = boss.heal();
-                System.out.println(BossName + " recovered " + heal + " health");
+                System.out.println(BossName + " recovered " + heal + " health.");
+                System.out.println("");
             } 
         }
         //Messages that appear if you win or lose to the boss
         if (!pokémonAlive){
+                System.out.println("");
                 System.out.println(PokémonName + " has blacked out!");
                 System.out.println("Game Over!");
+                System.out.println("");
             }
             if (!bossAlive){
+                System.out.println("");
                 System.out.println(BossName + " has perished!");
                 System.out.println("Congradulations! You Win! :)");
+                System.out.println("");
             }
     }
     
