@@ -1,3 +1,18 @@
+/*
+* COSC111- Final Project
+*
+* @author: Colin Harris
+* @version: December 11, 2025
+*
+* This program is a Pokémon simulator where you fight against a boss.
+* This program allows you to name your "Pokémon" and the boss.
+* To attack the boss, press 1 on your keyboard.
+* To heal, press 2 on your keyboard.
+* Any other input will result in a forfeited turn.
+* 
+*
+*/
+
 import java.util.Random;
 import java.util.Scanner;
 
@@ -8,7 +23,13 @@ public class Harris_FinalProject {
         System.out.println("");
         System.out.println("1. Attack");
         System.out.println("2. Heal");
-        return kb.nextInt();
+
+        if (kb.hasNextInt()) {
+            return kb.nextInt();
+        } else {
+            kb.next();
+            return 3;
+        }
     }
 
     public static void main(String[] args) {
