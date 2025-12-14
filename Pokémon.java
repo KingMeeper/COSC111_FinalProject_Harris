@@ -9,7 +9,7 @@ public class Pokémon {
     private int healMin;
     private int healMax;
 
-    //Random system that allows me to generate random numbers for attacking and healing
+    //Random system that allows the program to generate random numbers for attacking and healing
     Random random = new Random(System.currentTimeMillis());
 
     //Constructor for the Pokémon and boss
